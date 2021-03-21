@@ -1,7 +1,3 @@
-```SQL
-
-```
-
 1. Find the country that start with Y.
 ```SQL
 SELECT name FROM world
