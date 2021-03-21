@@ -1,4 +1,4 @@
-1. Find the country that start with Y.
+1. Find the country that starts with Y.
 ```SQL
 SELECT name FROM world
 WHERE name LIKE 'Y%';
