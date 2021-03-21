@@ -21,10 +21,16 @@ gdp/population >
 
 3. List the name and continent of countries in the continents containing either Argentina or Australia. Order by name of the country.
 ```SQL
-
+SELECT name, continent
+FROM world
+WHERE continent IN 
+  (SELECT continent
+   FROM world
+   WHERE name in ('Argentina', 'Australia'))
+ORDER BY name;
 ```
 
-4.
+4. Which country has a population that is more than Canada but less than Poland? Show the name and the population.
 ```SQL
 
 ```
